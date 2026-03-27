@@ -1,0 +1,20 @@
+name: Release tulo.eInvoice.eInvoiceViewer
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  call-release:
+    uses: ./.github/workflows/common-release.yml
+    with:
+      project_name: tulo.eInvoiceViewer
+      project_path: Src/tulo.eInvoiceViewer/tulo.eInvoiceViewer.csproj
+      publish_dir: publish/tulo.eInvoiceViewer
+      zip_prefix: tulo.eInvoiceViewer
+      executable_name: tulo.eInvoiceViewer.exe
+      runtime: win-x64
+      dotnet_version: 8.0.x
+      config_file: NuGet.config
+      prerelease: true
