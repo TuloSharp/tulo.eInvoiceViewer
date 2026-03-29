@@ -12,8 +12,8 @@ jobs:
   call-release:
     uses: ./.github/workflows/common-release.yml
     with:
-      project_name: tulo.eInvoiceViewer
-      project_path: Src/WPF/eInvoiceViewer/tulo.eInvoiceViewer.csproj
+      project_name: eInvoiceViewer
+      project_path: Src/WPF/eInvoiceViewer/eInvoiceViewer.csproj
       publish_dir: publish/tulo.eInvoiceViewer
       zip_prefix: tulo.eInvoiceViewer
       executable_name: tulo.eInvoiceViewer.exe
