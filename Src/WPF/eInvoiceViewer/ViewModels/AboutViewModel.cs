@@ -21,7 +21,7 @@ This tool is a private project. If it helps you, I would appreciate your support
 Dieses Tool ist ein privates Projekt. Wenn es Ihnen hilft, freue ich mich über eine Anerkennung.  
 Esta herramienta es un proyecto privado. Si le resulta útil, agradeceré su apoyo.  
 
-* ☕ [PayPal](https://www.paypal.me)
+* ☕ [PayPal](https://paypal.me/MarceloGuartanAndrad)
 * ⭐ [GitHub](https://github.com)
 
 ---
@@ -42,7 +42,7 @@ As the issuer of an invoice, you are solely responsible for its content.
 * We strongly recommend validation using official tools such as the **[Kosit Validator](https://github.com/itplr-kosit/validator)**.
 
 ### 4. Open Source & Licenses
-This program is freeware and published under the **MIT License**. It uses third-party libraries (including Serilog, PdfSharp, QRCoder, Svg, and Markdig.Wpf), whose licenses must be observed.
+This program is freeware and published under the **Apache License Version 2.0**. It uses third-party libraries (including Serilog, PdfSharp-extended, QRCoder, Svg, Markdig.Wpf and Google Material icons), whose licenses must be observed.
 
 *As of: March 2026*
 
@@ -64,7 +64,7 @@ Als Aussteller einer Rechnung sind Sie allein für deren Inhalt verantwortlich.
 * Wir empfehlen dringend die Validierung über offizielle Tools wie den **[Kosit-Validator](https://github.com/itplr-kosit/validator)**.
 
 ### 4. Open Source & Lizenzen
-Dieses Programm ist Freeware und unter der **MIT-Lizenz** veröffentlicht. Es verwendet Drittanbieter-Bibliotheken (u. a. Serilog, PdfSharp, QRCoder, Svg und Markdig.Wpf), deren Lizenzen beachtet werden müssen.
+Dieses Programm ist Freeware und unter der **Apache License Version 2.0** veröffentlicht. Es verwendet Drittanbieter-Bibliotheken (u. a. Serilog, PdfSharp-extended, QRCoder, Svg, Markdig.Wpf und Google Material icons), deren Lizenzen beachtet werden müssen.
 
 *Stand: März 2026*
 
@@ -86,7 +86,7 @@ Como emisor de una factura, usted es el único responsable de verificar la exact
 * Recomendamos encarecidamente la validación mediante herramientas oficiales como el **[Kosit Validator](https://github.com/itplr-kosit/validator)**.
 
 ### 4. Código abierto y licencias
-Este programa es freeware y se publica bajo la **licencia MIT**. Utiliza bibliotecas de terceros (entre ellas Serilog, PdfSharp, QRCoder, Svg y Markdig.Wpf), cuyas licencias deben respetarse.
+Este programa es freeware y se publica bajo la **Apache License Version 2.0**. Utiliza bibliotecas de terceros (entre ellas Serilog, PdfSharp-extended, QRCoder, Svg, Markdig.Wpf y Google Material icons), cuyas licencias deben respetarse.
 
 *Estado: marzo de 2026*
 ";

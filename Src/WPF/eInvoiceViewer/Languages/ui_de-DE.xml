@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+  <!--#region MainViewModel -->
+  <entry key="MainWindowTitle">eRechnungs-Viewer</entry>
+  <entry key="ToolTipPdfViewIcon">PDF-Ansicht der eRechnung öffnen</entry>
+  <entry key="ToolTipAboutViewIcon">Info-Ansicht öffnen</entry>
+  <entry key="DonateText">Gefällt dir die App? Bitte unterstütze sie mit einer Spende.</entry>
+  <!--#endregion -->
+
+  <!--#region ContentXmlToPdfViewerViewModel -->
+  <entry key="DragAndDropText">XML-/PDF-Datei hier hineinziehen und ablegen.</entry>
+  <entry key="ToolTipDragAndDrop">Eine XML- oder PDF-Datei hier ablegen.</entry>
+  <entry key="ToolTipSelectFile">Eine XML- oder PDF-Datei öffnen.</entry>
+  <entry key="ToolTipDonateText">Den Spendenlink findest du in der Info-Ansicht.</entry>
+  <!--#endregion -->
+</properties>

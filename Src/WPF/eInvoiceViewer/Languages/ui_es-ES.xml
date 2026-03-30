@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+  <!--#region MainViewModel -->
+  <entry key="MainWindowTitle">Visor de facturas electrónicas</entry>
+  <entry key="ToolTipPdfViewIcon">Abrir la vista PDF de la factura electrónica</entry>
+  <entry key="ToolTipAboutViewIcon">Abrir la vista Acerca de</entry>
+  <entry key="DonateText">¿Te gusta la aplicación? Por favor, haz una donación.</entry>
+  <!--#endregion -->
+
+  <!--#region ContentXmlToPdfViewerViewModel -->
+  <entry key="DragAndDropText">Arrastra y suelta aquí un archivo XML o PDF.</entry>
+  <entry key="ToolTipDragAndDrop">Suelta aquí un archivo XML o PDF.</entry>
+  <entry key="ToolTipSelectFile">Abrir un archivo XML o PDF.</entry>
+  <entry key="ToolTipDonateText">Puedes encontrar el enlace de donación en la vista Acerca de.</entry>
+  <!--#endregion -->
+</properties>
