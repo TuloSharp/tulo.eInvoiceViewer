@@ -90,16 +90,16 @@
                   Grid.Column="1"
                   Grid.Row="1">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="10" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="0">
-                    <Path
+                    <!--<Path
                           Data="{StaticResource InfoIconSVG}"
                           Fill="{StaticResource InfoBrushColor}"
                           Width="24"
-                          Height="24" />
+                          Height="24" />-->
                 </Grid>
 
                 <TextBlock Grid.Column="1"
