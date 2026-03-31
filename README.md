@@ -6,6 +6,11 @@ This project is designed to make it easy to open a supported invoice XML file an
 
 It is especially useful for users who work with structured electronic invoice files and want to quickly preview them in a readable document layout.
 
+![Image 1](./ReadMeImages/UiImage01.png)
+
+![Image 2](./ReadMeImages/UiImage02.png)
+
+
 ## What this program does
 
 This application allows a user to open a supported eInvoice XML file and display it as a PDF view.
