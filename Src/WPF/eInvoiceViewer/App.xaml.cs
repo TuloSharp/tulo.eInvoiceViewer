@@ -63,8 +63,8 @@ public partial class App : WpfApplication
     protected override void OnStartup(StartupEventArgs e)
     {
         #region Set Working Directory + Project name
-        var exePath = Assembly.GetExecutingAssembly().Location;
-        var exeDir = Path.GetDirectoryName(exePath);
+        // ✅ Also works with single-file publishing
+        var exeDir = AppContext.BaseDirectory;
         if (!string.IsNullOrEmpty(exeDir))
         {
             Directory.SetCurrentDirectory(exeDir);
