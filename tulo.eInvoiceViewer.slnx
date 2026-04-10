@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/common-release.yml" />
+    <File Path=".github/workflows/release.yml" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="LICENSE" />
     <File Path="README.md" />
