@@ -6,10 +6,11 @@ This project is designed to make it easy to open a supported invoice XML file an
 
 It is especially useful for users who work with structured electronic invoice files and want to quickly preview them in a readable document layout.
 
-![Image 1](./ReadMeImages/UiImage01.png)
+![Image 1](./ReadMeImages/Animation_01.gif)
 
-![Image 2](./ReadMeImages/UiImage02.png)
+![Image 2](./ReadMeImages/UiImage01.png)
 
+![Image 3](./ReadMeImages/UiImage02.png)
 
 ## What this program does
 
@@ -22,6 +23,19 @@ The program adds a context menu action, so a user can right-click a supported XM
 This feature is intended for supported **eInvoices** only.  
 It does **not** convert every arbitrary XML file.  
 Only XML files that match the supported invoice standards and structures can be displayed correctly.
+
+## Supported invoice formats
+
+This library generates PDF renderings from XML e‑invoices in the following syntaxes:
+
+   - UN/CEFACT Cross Industry Invoice (CII) – e.g. as used by XRechnung or ZUGFeRD/Factur‑X (CII profile)
+   - OASIS UBL (Invoice / CreditNote) – via the UBL namespaces cbc and cac
+
+The code automatically detects whether the input XML is UBL or CII by trying multiple XPath variants for key fields (e.g. invoice number, date, seller, buyer) and using the first one that matches.
+EN 16931 context
+
+EN 16931 defines the semantic data model for European electronic invoices and provides bindings for UBL and CII.
+This library does not perform EN‑16931 validation itself (no schema/schematron/business‑rule checks), but it can visually render XML invoices that are already EN‑16931‑compliant into a readable PDF.
 
 ## Important disclaimer
 

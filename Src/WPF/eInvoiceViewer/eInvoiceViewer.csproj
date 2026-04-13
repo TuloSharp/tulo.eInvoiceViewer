@@ -23,6 +23,7 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright>© 2025–2026 Tulo Team</Copyright>
+    <ApplicationIcon>Assets\TuloTeam.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,6 +37,12 @@
     <None Remove="Fonts\CASCADIACODE.TTF" />
     <None Remove="Fonts\ROBOTO.TTF" />
     <None Remove="Fonts\VERDANA.TTF" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\TuloTeam.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
