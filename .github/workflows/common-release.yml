@@ -220,7 +220,7 @@ jobs:
           prerelease: ${{ inputs.prerelease }}
           files: ${{ env.ZIP_NAME }}
           body: |
-            Beta release of ${{ inputs.project_name }}
+            Release of ${{ inputs.project_name }}
 
             Requirements
             - Windows x64
@@ -232,7 +232,6 @@ jobs:
             3. Run ${{ inputs.executable_name }}
 
             Notes
-            - This is a beta version for testing
             - Please report issues on GitHub
 
       - name: Final summary
