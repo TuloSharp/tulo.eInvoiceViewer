@@ -12,6 +12,8 @@ It is especially useful for users who work with structured electronic invoice fi
 
 ![Image 3](./ReadMeImages/UiImage02.png)
 
+---
+
 ## What this program does
 
 This application allows a user to open a supported eInvoice XML file and display it as a PDF view.
@@ -23,6 +25,8 @@ The program adds a context menu action, so a user can right-click a supported XM
 This feature is intended for supported **eInvoices** only.  
 It does **not** convert every arbitrary XML file.  
 Only XML files that match the supported invoice standards and structures can be displayed correctly.
+
+---
 
 ## Supported invoice formats
 
@@ -37,6 +41,8 @@ EN 16931 context
 EN 16931 defines the semantic data model for European electronic invoices and provides bindings for UBL and CII.
 This library does not perform EN‑16931 validation itself (no schema/schematron/business‑rule checks), but it can visually render XML invoices that are already EN‑16931‑compliant into a readable PDF.
 
+---
+
 ## Important disclaimer
 
 Please read the disclaimer information available inside the application.
@@ -49,10 +55,36 @@ This information is important and should be read before using the application in
 
 The disclaimer shown in the application is the relevant notice for usage, limitations, and responsibility.
 
+---
+
 ## Open Source
 
 This project is open source and can be used, modified, and improved by the community.
 
+---
+
+## Requirements
+
+| Requirement | Detail |
+|---|---|
+| OS | Windows x64 |
+| Runtime | .NET 8 (must be installed separately) |
+| .NET Download | https://dotnet.microsoft.com/en-us/download/dotnet/8.0 |
+
+---
+
+## Getting started
+
+1. Go to the [Releases](../../releases) page
+2. Download the latest `.zip` file
+3. Create a folder structure as described in the [Configuration — end users](#configuration--end-users) section
+4. Extract the ZIP into the `tulo.eInvoiceViewer/` folder
+5. Edit your `appsettings.json` in the `tulo.eInvoiceViewer-appsettings/` folder with your seller data and preferences
+6. Run `tulo.eInvoiceViewer.exe`
+
+No installer required.
+
+---
 
 ## Third-Party Libraries
 
@@ -72,11 +104,15 @@ All credits for these libraries go to their respective authors and maintainers.
 
 Note: The source code for tulo.XMLeInvoiceToPdf is available in the GitHub repository: https://github.com/TuloSharp/tulo.eInvoiceApp.git
 
+---
+
 ## UI Icons
 
 This project also uses Google Material icons in the user interface.
 
 All credits for these icons go to their respective authors and maintainers.
+
+---
 
 ## Supported invoice types
 
@@ -91,6 +127,8 @@ For example, it is focused on invoice formats in the area of:
 Only supported invoice XML structures can be rendered correctly.  
 Other XML files are ignored or cannot be displayed as PDF.
 
+---
+
 ## Features
 
 - Open supported eInvoice XML files as PDF view
@@ -101,11 +139,15 @@ Other XML files are ignored or cannot be displayed as PDF.
 - Designed for practical usage and easy understanding
 - Open-source and extendable for further invoice formats
 
+---
+
 ## How it works
 
 The application reads a supported XML invoice file, interprets the invoice structure, and creates or displays a PDF-style visual representation of the invoice.
 
 This means the XML stays the source input, but the user sees the invoice in a readable document form instead of raw XML text.
+
+---
 
 ## Important limitation
 
@@ -118,6 +160,8 @@ That means:
 - only supported eInvoice invoice structures are expected to work
 
 If a file is not a valid supported invoice XML file, the PDF preview may fail or may not be available.
+
+---
 
 ## Example use case
 
@@ -134,6 +178,8 @@ This is useful for:
 - testing invoice examples in development
 - validating the practical readability of generated invoice files
 
+---
+
 ## Context menu integration
 
 One of the main features of this project is the Windows Explorer integration.
@@ -141,6 +187,8 @@ One of the main features of this project is the Windows Explorer integration.
 A supported XML invoice file can be opened by using the right mouse button and selecting the corresponding action for PDF display.
 
 This makes the tool convenient for daily work because the user does not need to manually start the program first.
+
+---
 
 ## Example invoice files
 
@@ -151,6 +199,8 @@ Example files may be located in folders such as:
 - `Examples\`
 
 These files can be copied to the output directory during build so they are available for testing and preview.
+
+---
 
 ## Build and development notes
 
@@ -166,10 +216,14 @@ Example:
 </ItemGroup>
 ```
 
+---
+
 ## Notes
 
 - Logging helps identify missing arguments and file path problems.
 - This tool is intended for simple and practical to show an eInvocie XML Cii format.
+
+---
 
 ## License
 
