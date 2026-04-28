@@ -12,7 +12,7 @@
 
   <PropertyGroup>
     <PackageId>tulo.eInvoiceViewer</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Tulo Team</Authors>
     <Company>Tulo Team</Company>
     <Description>
@@ -59,7 +59,7 @@
     <PackageReference Include="tulo.LoadingSpinnerControl" Version="1.0.0" />
     <PackageReference Include="tulo.ResourcesWpfLib" Version="1.0.0" />
     <PackageReference Include="tulo.SerilogLib" Version="1.0.0" />
-    <PackageReference Include="tulo.XMLeInvoiceToPdf" Version="1.0.1" />
+    <PackageReference Include="tulo.XMLeInvoiceToPdf" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>

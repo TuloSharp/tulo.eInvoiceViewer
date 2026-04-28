@@ -42,7 +42,7 @@ public class AppRunner : IAppRunner
         {
             _logger.LogInformation("PDF generation started. Xml={Xml}, Generator={Gen}", xmlInvoicePath, generator!.Name);
 
-            var pdfPath = generator.GeneratePdfFile(outputPdfPath, xmlInvoicePath, xmlInvoiceContent, true);
+            var pdfPath = generator.GeneratePdfFile(outputPdfPath, xmlInvoicePath, xmlInvoiceContent, true, string.Empty);
 
             if (string.IsNullOrWhiteSpace(pdfPath) || !File.Exists(pdfPath))
             {
@@ -82,7 +82,7 @@ public class AppRunner : IAppRunner
         {
             _logger.LogInformation("PDF stream generation started. Xml={Xml}, Generator={Gen}", xmlInvoicePath, generator!.Name);
 
-            var stream = generator.GeneratePdfStream(xmlInvoicePath, xmlInvoiceContent, true);
+            var stream = generator.GeneratePdfStream(xmlInvoicePath, xmlInvoiceContent, true, string.Empty);
 
             if (stream == null || stream.Length == 0)
             {
