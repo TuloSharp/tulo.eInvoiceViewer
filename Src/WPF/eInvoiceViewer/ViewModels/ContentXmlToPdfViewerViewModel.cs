@@ -72,10 +72,14 @@ public class ContentXmlToPdfViewerViewModel : BaseViewModel
 
     #region Labels&Contents
     public string DragAndDropText { get; set; } = string.Empty;
+    public string ContentButtonLoad { get; set; } = string.Empty;
+
+    
 
     void FillAllLabelsAndContents()
     { 
         DragAndDropText = _translatorUiProvider.Translate("DragAndDropText");
+        ContentButtonLoad = _translatorUiProvider.Translate("ContentButtonLoad");
     }
     #endregion
 

@@ -293,12 +293,16 @@ public class MainViewModel : BaseViewModel, IResizeWindowViewModel
     #region Labels&Contents
     public string MainWindowTitle { get; set; } = string.Empty;
     public string DonateText { get; set; } = string.Empty;
-   // Gefällt dir die App? Spende
+    public string NavLabelPdf { get; set; } = string.Empty;
+    public string NavLabelAbout { get; set; } = string.Empty;
 
     private void FillAllLabelsAndContents()
     {
         MainWindowTitle = _translatorUiProvider.Translate("MainWindowTitle");
         DonateText = _translatorUiProvider.Translate("DonateText");
+
+        NavLabelPdf = _translatorUiProvider.Translate("NavLabelPdf");
+        NavLabelAbout = _translatorUiProvider.Translate("NavLabelAbout");
     }
     #endregion
 

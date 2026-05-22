@@ -8,9 +8,13 @@
   <!--#endregion -->
 
   <!--#region ContentXmlToPdfViewerViewModel -->
-  <entry key="DragAndDropText">Drag &amp; drop an XML/PDF file here.</entry>
-  <entry key="ToolTipDragAndDrop">Drop an XML or PDF file here.</entry>
-  <entry key="ToolTipSelectFile">Open an XML or PDF file.</entry>
+  <entry key="DragAndDropText">Drag &amp; drop an XML file here.</entry>
+  <entry key="ToolTipDragAndDrop">Drop an XML here.</entry>
+  <entry key="ToolTipSelectFile">Open an XML.</entry>
   <entry key="ToolTipDonateText">You can find the donation link in the About view.</entry>
   <!--#endregion -->
+
+  <entry key="NavLabelPdf">PDF</entry>
+  <entry key="NavLabelAbout">About</entry>
+  <entry key="ContentButtonLoad">📂 Load</entry>
 </properties>

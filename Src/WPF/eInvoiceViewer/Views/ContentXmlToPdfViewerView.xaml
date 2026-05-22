@@ -13,6 +13,44 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+            <!--  Secondary toolbar button (blue, outline) – e.g., Load  -->
+            <Style x:Key="ToolbarLoadButton" TargetType="Button">
+                <Setter Property="Background" Value="White" />
+                <Setter Property="Foreground" Value="#3B82F6" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="FontWeight" Value="SemiBold" />
+                <Setter Property="Padding" Value="16,8" />
+                <Setter Property="BorderThickness" Value="1.5" />
+                <Setter Property="BorderBrush" Value="#3B82F6" />
+                <Setter Property="Cursor" Value="Hand" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="Bd"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="6"
+                                    Padding="{TemplateBinding Padding}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Bd" Property="Background" Value="#EFF6FF" />
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="Bd" Property="Background" Value="#DBEAFE" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="Bd" Property="BorderBrush" Value="#CBD5E1" />
+                                    <Setter Property="Foreground" Value="#CBD5E1" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </UserControl.Resources>
 
@@ -28,7 +66,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="auto" />
                 <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="10" />
             </Grid.ColumnDefinitions>
 
@@ -55,18 +93,11 @@
             <Button Name="OpenFileButton"
                     Grid.Column="3"
                     Grid.Row="1"
+                    Content="{Binding ContentButtonLoad}"
+                    Style="{StaticResource ToolbarLoadButton}"
+                    ToolTip="{Binding ToolTipSelectFile}"
                     Command="{Binding SelectXmlFilePathCommand}"
-                    ToolTip="{Binding ToolTipSelectFile}">
-                <Grid>
-                    <Viewbox Style="{StaticResource ViewBox4Icon}">
-                        <Path Data="{StaticResource OpenInBrowserIconSVG}"
-                              Style="{StaticResource ContentButtonPathStyle}"
-                              Fill="{StaticResource ButtonBrushIconColor}"
-                              Width="auto"
-                              Height="auto" />
-                    </Viewbox>
-                </Grid>
-            </Button>
+                    Margin="8,0,0,0" />
         </Grid>
 
         <Grid Grid.Row="1">
